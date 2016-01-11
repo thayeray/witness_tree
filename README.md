@@ -14,7 +14,7 @@ the second will combine all lines that begin with "! " and follow the multi-line
 
 The geo file contains the details about the individual tract description courses. The geo file also joins the latitude 
 and longitude coordinates from the .kml file together with the corresponding course in the .mbl tract description, i.e.
-the pt, lc, ln or lm with its direction, distance and comment. 
+the pt, lc, ln or lm with its direction, distance and comment. Note the tract descriptions should begin at a point, be followed by the courses, and the last course should end at the beginning point.
 
 The tract course comments in the .mbl file is where the witness tree information is stored. An editable text box is 
 provided with some sample search terms. The user should edit this list to meet their own needs. The program will then 
@@ -24,9 +24,3 @@ search for each word or phrase on each line of the list in the .mbl course comme
 The output files can be imported into GIS using the GIS program's open text file functionality and setting the geometry
 to be the KML_x and KML_y fields. ESRI software refers to this as "events". The coordinate system should be set to be
 the Google Spherical Mercator projection EPSG 3857, also known as EPSG 900913.
-
-More detailed directions for using the program, including screenshots, can be found at:
-http://www.cicadagis.com/witness_tree/index.html
-
-This program was written pro bono publico by Thayer Young for the Maryland/DC Chapter of the Nature Conservancy. 
-Copyright 2016 Thayer Young, Cicada Systems GIS Consulting.
